@@ -18,7 +18,6 @@ user_input = {
     "ContractType": st.selectbox("Contract Type", ["Month-to-month", "One year", "Two year"]),
     "InternetService": st.selectbox("Internet Service", ["DSL", "Fiber optic", "No"]),
     "TechSupport": st.selectbox("Tech Support", ["Yes", "No", "No internet service"]),
-    "CustomerID": st.text_input("Customer ID", value="12345-A"),
     "Age": st.number_input("Age", min_value=18, max_value=100, value=35),
     "Tenure": st.slider("Tenure (months)", 0, 72, 12),
     "MonthlyCharges": st.number_input("Monthly Charges", min_value=0.0, max_value=200.0, value=70.0),

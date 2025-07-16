@@ -16,8 +16,8 @@ tenure = st.slider("Tenure (months)", 0, 72, 12)
 monthly_charges = st.slider("Monthly Charges ($)", 0, 150, 70)
 total_charges = st.slider("Total Charges ($)", 0, 10000, 1000)
 age = st.slider("Age", 0, 100)
-InternetService = st.selectbox("Internet Service", ["Yes", "No"])
-TechSupport = st.selectbox("Tech Support", ["Yes", "No"])
+internetService = st.selectbox("Internet Service", ["Yes", "No"])
+techSupport = st.selectbox("Tech Support", ["Yes", "No"])
 contract = st.selectbox("Contract Type", ["Month-to-month", "One year", "Two year"])
 gender = st.selectbox("Gender", ["Male", "Female"])
 
@@ -30,8 +30,8 @@ input_data = pd.DataFrame({
     "SeniorCitizen": [0],  # optional default
     "tenure": [tenure],
     "Contract": [contract],
-    "InternetService": [InternetService],
-    "TechSupport": [TechSupport],
+    "InternetService": [internetService],
+    "TechSupport": [techSupport],
     "MonthlyCharges": [monthly_charges],
     "TotalCharges": [total_charges]
 })

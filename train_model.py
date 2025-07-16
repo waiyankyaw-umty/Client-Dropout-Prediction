@@ -30,7 +30,7 @@ for col in df.columns:
 
 # 3. Split Features & Target
 y = df['Churn'].map({'Yes': 1, 'No': 0})
-X = df.drop(columns=['Churn'])
+X = df.drop(columns=['Churn', 'CustomerID'])
 
 # 4. Identify Column Types
 categorical_cols = X.select_dtypes(include='object').columns.tolist()

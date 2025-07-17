@@ -1,4 +1,4 @@
-Customer Churn Prediction App
+Client Dropout Prediction App
 A web application built with Streamlit that predicts whether a customer is likely to churn based on their service details.
 
 Overview

@@ -4,8 +4,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-st.set_page_config(page_title="Customer Churn Prediction", layout="centered")
-st.title("📊 Customer Churn Prediction App")
+st.set_page_config(page_title="Client Dropout Prediction", layout="centered")
+st.title("📊 Client Dropout Prediction App")
 
 # Load trained model pipeline
 model = joblib.load("model.pkl")
